@@ -13,6 +13,9 @@ ENV PATH=/root/.local/share/solana/install/active_release/bin:$PATH
 
 RUN cargo install --git https://github.com/project-serum/anchor --tag $ANCHOR_VERSION anchor-cli --locked
 
+RUN curl -fsSL https://deb.nodesource.com/setup_17.x | bash -
+RUN apt-get install -y nodejs
+
 COPY shell-exec.sh /bin/shell-exec
 RUN chmod +x /bin/shell-exec
 
