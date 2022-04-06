@@ -1,2 +1,4 @@
 #!/bin/bash
-exec $1
+for arg in "$@"; do
+  $arg
+done
