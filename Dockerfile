@@ -1,7 +1,7 @@
 FROM rust:1.59
 
-ARG SOLANA_VERSION=v1.10.29
-ARG ANCHOR_VERSION=v0.24.2
+ARG SOLANA_VERSION=v1.13.3
+ARG ANCHOR_VERSION=v0.25.0
 
 RUN apt-get update -y 
 RUN apt-get upgrade -y 
