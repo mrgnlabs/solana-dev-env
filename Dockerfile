@@ -22,4 +22,7 @@ RUN npm install --global yarn
 COPY shell-exec.sh /bin/shell-exec
 RUN chmod +x /bin/shell-exec
 
+EXPOSE 8080
+EXPOSE 9000
+
 WORKDIR workspace/
